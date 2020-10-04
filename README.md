@@ -1,6 +1,6 @@
 # pythonc
 
-On installation, this will provide the user a command : pythonc command, which take a path for python module to be compiled.
+On installation, this will provide a command : pythonc, which take a path for python module to be compiled.
 
 Usage: #> pythonc /path/of/python/module.py
 
