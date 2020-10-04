@@ -1,10 +1,18 @@
 from setuptools import setup 
+import os
 
-setup( name="pythonc",
-description="this give a command pythonc to compile any python module",
-version="1.1.0",
+current_dir = os.path.dirname(__file__)
+with open(os.path.join(current_dir, 'README.md'),'r') as readme_ob:
+    README=readme_ob.read()
+
+
+setup( name="sdbit04-pythonc",
+description="On installation, This package gives a command pythonc to compile any python module",
+long_description=README,
+long_description_content_type="text/markdown",
+version="1.2.2",
 author="swapankumarDas",
-url="https://github.com/sdbit04/pythonc.git",
+url="https://github.com/",
 packages=["pythonc"],
 entry_points={'console_scripts': [
     'pythonc=pythonc.pythonc:main_method',
